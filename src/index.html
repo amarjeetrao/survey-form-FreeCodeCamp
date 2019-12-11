@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey Form - FreeCodeCamp Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:600&display=swap" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="header container py-5 px-4 d-lg-flex">
+          <div class="header-body d-flex flex-column justify-content-center">
+            <h1 class="title-heading" id="title">FreeCodeCamp Survey Form</h1>
+            <p class="title-description" id="description">
+              Help us to improve the platform and get a rewarding prize🏆
+            </p>
+          </div>
+          <figure class="figure header-image">
+            <img
+              class="p-sm-5 figure-image"
+              src="../public/images/survey-image.png"
+              alt="survey form image"
+            />
+            <figcaption class="figure-caption affiliation-illustrations text-center">
+              <a href="https://icons8.com"
+                >illustration by Ouch.pics</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </header>
+      <main class="main-container container px-4 px-md-3">
+        <form class="survey-form" id="survey-form">
+          <fieldset class="form-group row">
+            <legend class="col-form-legend col-sm-12 pb-2">
+              Tell us little about yourself
+            </legend>
+            <div class="col-sm-12 pb-2">
+              <label for="name" class="col-form-label" id="name-label"
+                >Full Name</label
+              >
+              <div class="">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="name"
+                  pattern="[A-Za-z]{2,}"
+                  title="name must be at least one character long without numbers or special characters"
+                  placeholder="eg. Akshay Malhotra"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 pb-2">
+              <label for="email" class="col-form-label" id="email-label"
+                >Your Email</label
+              >
+              <div class="">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="eg. akshaymalhotra@gmail.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 pb-2">
+              <label for="age" class="col-form-label" id="number-label"
+                >Your Age</label
+              >
+              <div class="">
+                <input
+                  type="number"
+                  max="90"
+                  min="12"
+                  class="form-control"
+                  name="age"
+                  placeholder="eg. 17"
+                  id="number"
+                  required
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-group row">
+            <legend class="col-form-legend col-sm-12 pb-2">
+              Tell us little about your profession
+            </legend>
+            <div class="col-sm-12 pb-2">
+              <label for="roll" class="col-form-label"
+                >What is your occupation</label
+              >
+              <select class="form-control" name="roll" id="dropdown">
+                <option disabled value selected>who are you....</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="Engineer">Engineer</option>
+                <option value="doctor">doctor</option>
+                <option value="scientist">scientist</option>
+                <option value="something">something special... 🤹‍♂️</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="form-group row">
+            <legend class="col-form-legend col-sm-12 pb-2">
+              help freeCodeCamp to improve
+            </legend>
+            <div class="col-sm-12 pb-3">
+              <p class="check-heading">Did you find FreeCodeCamp useful?</p>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="like"
+                    id="true-radio"
+                    value="true"
+                    checked
+                  />
+                  <span class="form-check-mark"></span>
+                  True
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="like"
+                    id="false-radio"
+                    value="false"
+                  />
+                  <span class="form-check-mark"></span>
+                  false
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 pb-2">
+              <p class="check-heading">
+                Which Certification you have completed?
+              </p>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="certification"
+                    id="certification"
+                    value="responsive web design"
+                  />
+                  <span class="form-check-mark"></span>
+                  Responsive Web Design
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="certification"
+                    id="certification"
+                    value="javascript algorithms and data structures"
+                  />
+                  <span class="form-check-mark"></span>
+                  JavaScript Algorithms and Data Structures
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="certification"
+                    id="certification"
+                    value="front end libraries"
+                  />
+                  <span class="form-check-mark"></span>
+                  Front End Libraries
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="certification"
+                    id="certification"
+                    value="data visualization"
+                  />
+                  <span class="form-check-mark"></span>
+                  Data Visualization
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="certification"
+                    id="certification"
+                    value="apis and microservices"
+                  />
+                  <span class="form-check-mark"></span>
+                  APIs and Microservices
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="certification"
+                    id="certification"
+                    value="information security and quality assurance"
+                  />
+                  <span class="form-check-mark"></span>
+                  Information Security and Quality Assurance
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 pb-2">
+              <label for="suggestion"></label>
+              <textarea
+                class="form-control"
+                name="suggestion"
+                id="suggestion"
+                rows="3"
+                placeholder="comment here your awesome ideas...."
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="form-group row">
+            <div class="col-sm-12 pb-2">
+              <button type="submit" class="btn btn-primary" id="submit">
+                Submit
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
