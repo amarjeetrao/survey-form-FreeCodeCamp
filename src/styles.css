@@ -96,7 +96,7 @@ header {
     visibility: hidden;
 }
 
-.form-check-label .form-check-input + .form-check-mark::after {
+.radio-label .form-check-input + .form-check-radio::after {
   content: "✊";
   position: absolute;
   left: 0;
@@ -104,6 +104,20 @@ header {
   margin-left: -3px;
 }
 
-.form-check-label .form-check-input:checked + .form-check-mark::after {
+.radio-label .form-check-input:checked + .form-check-radio::after {
   content: "👍";
+}
+
+.form-check-label .form-check-input + .form-check-mark {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--brand-color);
+  border-radius: 50%;
+  margin-left: -1rem;
+  transition: all 0.2s ease;
+}
+
+.form-check-label .form-check-input:checked + .form-check-mark {
+  background: var(--brand-color);
 }
