@@ -65,6 +65,7 @@ textarea {
 .btn-primary {
     background-color: var(--brand-color);
     border: none;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -81,7 +82,9 @@ header {
 
 .header-image,
 .header-body {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .title-description {
@@ -115,6 +118,7 @@ header {
   border: 1px solid var(--brand-color);
   border-radius: 50%;
   margin-left: -1rem;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
